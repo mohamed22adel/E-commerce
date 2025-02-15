@@ -1,0 +1,871 @@
+body{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+.subject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subject h1{
+    border-bottom: 5px darkorange solid;
+    padding:5px;
+}
+.subject button{
+    background-color:darkorange;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.top_category{
+display: grid;
+grid-template-columns: repeat(6 ,1fr);
+gap: 5px;
+}
+.sales{
+    display: flex;
+    justify-content: space-between;
+}
+.sales img{
+cursor: pointer;
+border-radius: 20px;
+z-index: -1;
+}
+.sales button{
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: darkorange;
+}
+.Our_Top_Collection_div{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 10px;
+}
+.Our_Top_Collection_div div{
+    margin: auto 10px;
+}
+.Our_Top_Collection_card{
+    border: 1px rgb(228, 238, 242) solid;
+    width: 300px;
+    border-radius: 10px;
+    transition: 2ms;
+    padding: auto 10px;
+    margin: 10px auto;
+}
+.Our_Top_Collection_card img{
+    justify-content: center;
+    margin-left: 25px;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+.Our_Top_Collection_card:hover{
+border: 1px darkorange solid;
+margin-bottom: 5px;
+}
+.Our_Top_Collection_card .p1{
+    position: relative;
+color: white;
+background-color: darkorange;
+padding: 5px 10px;
+border-radius: 15px;
+margin-left: 10px;
+margin-top: 10px;
+z-index: -1;
+width: 85px;
+}
+.Our_Top_Collection_card_name{
+    display: flex;
+    margin-left: 20px;
+}
+.Our_Top_Collection_card_name .p2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Our_Top_Collection_card_name div{
+    display: flex;
+}
+.Our_Top_Collection_card_name .div1{
+    margin-top: 3px;
+}
+.Our_Top_Collection_card_name div .fa-star{
+    color: gold;
+    margin-left: 80px;
+    margin-top: 3.5px;
+}
+.Our_Top_Collection_card_price{
+    display: flex;
+}
+.Our_Top_Collection_card_price div{
+    margin: auto 30px;
+}
+.Our_Top_Collection_card_price .fa-heart{
+    font-size: 25px;
+    background-color: darkorange;
+    border: 1px darkorange solid;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: -15px;
+    color: #fff;
+    cursor: pointer;
+}
+.Our_Top_Collection_card_price .fa-cart-shopping{
+    font-size: 25px;
+    background-color: darkorange;
+    border: 1px darkorange solid;
+    border-radius: 50%;
+    padding: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+.Our_Top_Collection_card_price_offer .p4{
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: green;
+    text-decoration: line-through;
+}
+.Our_Top_Collection_card_price_offer h2{
+    font-weight: bold;
+}
+.subscribe_offers{
+    background-color: darkorange;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding:auto 10px;
+    margin: 15px auto ;
+}
+.subscribe_offers_h1{
+    color: white;
+    padding: auto 10px;
+    margin-bottom: 20px;
+}
+.subscribe_offers_p{
+    color: white;
+    padding: auto 10px;
+    margin-bottom: 0;
+}
+
+.subscribe_offers_form input{
+width: 350px;
+height: 50px;
+border-radius: 10px;
+border: none;
+padding: 20px;
+}
+.subscribe_offers_form button{
+color: white;
+background-color: #000000;
+border: 1px white solid;
+padding:10px;
+width: 250px;
+height: 50px;
+border-radius: 10px;
+margin: 15px;
+}
+/*
+@media (max-width:320px ) {
+    .top_category{
+        display: block;
+    }
+    .top_category .product{
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .sales{
+        display: block;
+    }
+    .sales img{
+        padding: auto 10px;
+        width: 270px;
+        margin: 10px;
+        }
+        .sales button{
+display: none;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 280px;
+        }
+        .subscribe_offers_form input{
+        width: 250px;
+        padding: 15px;
+        }
+
+
+
+
+}
+
+@media (min-width:375px ) {
+    .top_category{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+    }
+    .top_category .product{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .top_category .product img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales{
+        display: block;
+    }
+    .sales img{
+        padding: auto 10px;
+        width: 320px;
+        margin: 10px;
+        }
+        .sales button{
+display: none;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 340px;
+        }
+        .subscribe_offers_form input{
+        width: 300px;
+        padding: 15px;
+        }
+        .subscribe_offers_form button{
+            width: 300px;
+            padding: 10px;
+            }
+
+}
+
+@media (min-width:425px ) {
+    .top_category{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+    }
+    .top_category .product{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .top_category .product img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales{
+        display: block;
+    }
+    .sales img{
+        padding: auto 10px;
+        width: 380px;
+        margin: 10px;
+        }
+        .sales button{
+display: none;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 390px;
+            left: 5px;
+        }
+        .subscribe_offers_form input{
+        width: 300px;
+        padding: 15px;
+        }
+        .subscribe_offers_form button{
+            width: 300px;
+            padding: 10px;
+            }
+
+}
+
+@media (min-width:768px) {
+    .top_category{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+    }
+    .top_category .product{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .top_category .product img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales{
+        display: flex;
+    }
+    .sales img{
+        padding: auto 10px;
+        width: 320px;
+        margin: 10px;
+        }
+        .sales button{
+display: none;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 700px;
+        }
+        .subscribe_offers_form input{
+        width: 600px;
+        padding: 15px;
+        }
+        .subscribe_offers_form button{
+            width: 600px;
+            padding: 10px;
+            }
+}
+
+@media (min-width:991px) {
+    .top_category{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+    }
+    .top_category .product{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .top_category .product img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales{ 
+        display: flex;
+    }
+    .sales img{
+        width: 400px;
+        }
+        .sales button{
+            display: none;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 800px;
+            height: 500px;
+        }
+        .subscribe_offers_h1 h1{
+            font-size: 50px;
+        }
+        .subscribe_offers_p p{
+            font-size: 40px;
+        }
+        .subscribe_offers_form input{
+        width: 700px;
+        height: 100px;
+        padding: 15px;
+        font-size: 30px;
+        }
+        .subscribe_offers_form input::placeholder{
+            font-size: 30px;
+            padding: auto;
+        }
+        .subscribe_offers_form button{
+            width: 700px;
+            height: 100px;
+            padding: 10px;
+            font-size: 30px;
+            }
+}
+/*
+@media (min-width:1024px) {
+    .top_category{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+    }
+    .top_category .product{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .top_category .product img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales{ 
+        display: flex;
+    }
+    .sales img{
+        width: 450px;
+        height: 300px;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 800px;
+            height: 500px;
+        }
+        .subscribe_offers_h1 h1{
+            font-size: 50px;
+        }
+        .subscribe_offers_p p{
+            font-size: 40px;
+        }
+        .subscribe_offers_form input{
+        width: 700px;
+        height: 100px;
+        padding: 15px;
+        font-size: 30px;
+        }
+        .subscribe_offers_form input::placeholder{
+            font-size: 30px;
+            padding: auto;
+        }
+        .subscribe_offers_form button{
+            width: 700px;
+            height: 100px;
+            padding: 10px;
+            font-size: 30px;
+            }
+}
+
+@media (min-width:1200px) {
+    .top_category{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+    }
+    .top_category .product{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .top_category .product img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales{ 
+        display: flex;
+    }
+    .sales img{
+        width: 550px;
+        height: 350px;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 900px;
+            height: 600px;
+        }
+        .subscribe_offers_h1 h1{
+            font-size: 60px;
+        }
+        .subscribe_offers_p p{
+            font-size: 50px;
+        }
+        .subscribe_offers_form input{
+        width: 700px;
+        height: 100px;
+        padding: 15px;
+        font-size: 40px;
+        }
+        .subscribe_offers_form input::placeholder{
+            font-size: 40px;
+            padding: auto;
+        }
+        .subscribe_offers_form button{
+            width: 700px;
+            height: 100px;
+            padding: 10px;
+            font-size: 40px;
+            }
+}
+
+@media (min-width:1440px) {
+    .top_category{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+    }
+    .top_category .product{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .top_category .product img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales{ 
+        display: flex;
+    }
+    .sales img{
+        width: 650px;
+        height: 550px;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 1000px;
+            height: 750px;
+        }
+        .subscribe_offers_h1 h1{
+            font-size: 70px;
+        }
+        .subscribe_offers_p p{
+            font-size: 60px;
+        }
+        .subscribe_offers_form input{
+        width: 700px;
+        height: 100px;
+        padding: 15px;
+        font-size: 50px;
+        }
+        .subscribe_offers_form input::placeholder{
+            font-size: 50px;
+            padding: auto;
+        }
+        .subscribe_offers_form button{
+            width: 700px;
+            height: 100px;
+            padding: 10px;
+            font-size: 50px;
+            }
+}
+
+@media (min-width:2560px) {
+    .top_category{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+    }
+    .top_category .product{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .top_category .product img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales{ 
+        display: flex;
+    }
+    .sales img{
+        width: 650px;
+        height: 600px;
+        }
+        .Our_Top_Collection_div{
+            display: block;
+        }
+        .Our_Top_Collection_div div{
+            margin:10px auto;
+        }
+        .Our_Top_Collection_card{
+            width: 280px;
+            border-radius: 15px;
+        }
+        .Our_Top_Collection_card_name{
+            display: flex;
+            margin-left: 20px;
+        }
+        .Our_Top_Collection_card_name .p2{
+            margin-left: 10px;
+        }
+        .Our_Top_Collection_card_name div .fa-star{
+            margin-left: 60px;
+        }
+        .Our_Top_Collection_card_price div{
+            margin: auto 25px;
+        }
+        .Our_Top_Collection_card_price .fa-heart{
+            margin-left: -5px;
+        }
+
+
+        .subscribe_offers{
+            width: 1300px;
+            height: 600px;
+        }
+        .subscribe_offers_h1 h1{
+            font-size: 70px;
+        }
+        .subscribe_offers_p p{
+            font-size: 60px;
+        }
+        .subscribe_offers_form input{
+        width: 700px;
+        height: 100px;
+        padding: 15px;
+        font-size: 50px;
+        }
+        .subscribe_offers_form input::placeholder{
+            font-size: 50px;
+            padding: auto;
+        }
+        .subscribe_offers_form button{
+            width: 700px;
+            height: 100px;
+            padding: 10px;
+            font-size: 50px;
+            }
+}*/

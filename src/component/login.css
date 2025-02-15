@@ -1,0 +1,128 @@
+/* log in */
+.login_container{
+    border: 1px rgb(209, 207, 207) solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.login_paragraph{
+    text-align: center;
+}
+.login_paragraph p{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.login_paragraph h2{
+    margin-top: 0;
+}
+form label{
+margin-left: 25%;
+}
+form input{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    border: 1px rgb(209, 207, 207) solid;
+}
+form button{
+    background-color: darkorange;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    margin: 20px 25%;
+}
+.login_container .login_paragraph2{
+    display: flex;
+    margin: auto 28%;
+}
+.login_paragraph2 p{
+    padding: 2.5px;
+}
+
+/* sign up */
+
+
+.signup_container{
+    border: 1px rgb(209, 207, 207) solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.signup_paragraph{
+    text-align: center;
+}
+.signup_paragraph p{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.signup_paragraph h2{
+    margin-top: 0;
+}
+form label{
+z-index: -1;
+margin-left: 25%;
+}
+form input{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    border: 1px rgb(209, 207, 207) solid;
+}
+form button{
+    background-color: darkorange;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    margin: 20px 25%;
+}
+.signup_container .signup_paragraph2{
+    display: flex;
+    margin: auto 28%;
+}
+.signup_paragraph2 p{
+    padding: 2.5px;
+}
+
+@media (max-width:230px) {
+
+}
+
+@media (min-width:375px) {
+
+}
+
+@media (min-width:425px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:991px) {
+    
+}
+
+@media (min-width:1024px) {
+    
+}
+
+@media (min-width:1200px) {
+    
+}
+
+@media (min-width:1440px) {
+    
+}
+
+@media (min-width:2560px) {
+    
+}
